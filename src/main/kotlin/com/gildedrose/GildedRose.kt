@@ -1,8 +1,24 @@
 package com.gildedrose
 
+import com.gildedrose.strategy.StrategyService
+
 class GildedRose(val items: List<Item>) {
 
+    val strategyService = StrategyService()
+
     fun updateQuality() {
+        // updateQualityOld()
+        updateQualityNew()
+    }
+
+    fun updateQualityNew() {
+        for (item in items) {
+            val strategy = strategyService.generateStrategy(item)
+            strategy.updateItem(item)
+        }
+    }
+
+    fun updateQualityOld() {
         for (i in items.indices) {
             if (items[i].name != "Aged Brie" && items[i].name != "Backstage passes to a TAFKAL80ETC concert") {
                 if (items[i].quality > 0) {
