@@ -16,6 +16,7 @@ internal class StrategyServiceTest {
         "Aged Brie, AgedBrieStrategy",
         "'Sulfuras, Hand of Ragnaros', LegendaryStrategy",
         "Backstage passes to a TAFKAL80ETC concert, BackstagePassesStrategy",
+        "Conjured Mana Cake, ConjuredStrategy",
     )
     fun Given_AnItem_When_TriggeringGenerateStrategy_Then_GenerateStrategyShouldReturnCorrectStrategy(
         itemName: String,

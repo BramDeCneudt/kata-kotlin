@@ -22,6 +22,9 @@ Backstage passes to a TAFKAL80ETC concert, 10, 20
 Backstage passes to a TAFKAL80ETC concert, 5, 20
 Backstage passes to a TAFKAL80ETC concert, 5, 50
 Backstage passes to a TAFKAL80ETC concert, 0, 49
+Conjured Mana Cake, 3, 6
+Conjured Mana Cake, -3, 6
+Conjured Mana Cake, -3, 3
 
 -------- day 2 --------
 name, sellIn, quality
@@ -39,6 +42,9 @@ Backstage passes to a TAFKAL80ETC concert, 9, 22
 Backstage passes to a TAFKAL80ETC concert, 4, 23
 Backstage passes to a TAFKAL80ETC concert, 4, 50
 Backstage passes to a TAFKAL80ETC concert, -1, 0
+Conjured Mana Cake, 2, 4
+Conjured Mana Cake, -4, 2
+Conjured Mana Cake, -4, 0
 
 -------- day 3 --------
 name, sellIn, quality
@@ -56,6 +62,9 @@ Backstage passes to a TAFKAL80ETC concert, 8, 24
 Backstage passes to a TAFKAL80ETC concert, 3, 26
 Backstage passes to a TAFKAL80ETC concert, 3, 50
 Backstage passes to a TAFKAL80ETC concert, -2, 0
+Conjured Mana Cake, 1, 2
+Conjured Mana Cake, -5, 0
+Conjured Mana Cake, -5, 0
 
 -------- day 4 --------
 name, sellIn, quality
@@ -73,6 +82,9 @@ Backstage passes to a TAFKAL80ETC concert, 7, 26
 Backstage passes to a TAFKAL80ETC concert, 2, 29
 Backstage passes to a TAFKAL80ETC concert, 2, 50
 Backstage passes to a TAFKAL80ETC concert, -3, 0
+Conjured Mana Cake, 0, 0
+Conjured Mana Cake, -6, 0
+Conjured Mana Cake, -6, 0
 
 -------- day 5 --------
 name, sellIn, quality
@@ -90,6 +102,9 @@ Backstage passes to a TAFKAL80ETC concert, 6, 28
 Backstage passes to a TAFKAL80ETC concert, 1, 32
 Backstage passes to a TAFKAL80ETC concert, 1, 50
 Backstage passes to a TAFKAL80ETC concert, -4, 0
+Conjured Mana Cake, -1, 0
+Conjured Mana Cake, -7, 0
+Conjured Mana Cake, -7, 0
 
 -------- day 6 --------
 name, sellIn, quality
@@ -107,6 +122,9 @@ Backstage passes to a TAFKAL80ETC concert, 5, 30
 Backstage passes to a TAFKAL80ETC concert, 0, 35
 Backstage passes to a TAFKAL80ETC concert, 0, 50
 Backstage passes to a TAFKAL80ETC concert, -5, 0
+Conjured Mana Cake, -2, 0
+Conjured Mana Cake, -8, 0
+Conjured Mana Cake, -8, 0
 
 """;
 
@@ -127,6 +145,9 @@ Backstage passes to a TAFKAL80ETC concert, -5, 0
             Item("Backstage passes to a TAFKAL80ETC concert", 5, 20),
             Item("Backstage passes to a TAFKAL80ETC concert", 5, 50),
             Item("Backstage passes to a TAFKAL80ETC concert", 0, 49),
+            Item("Conjured Mana Cake", 3, 6),
+            Item("Conjured Mana Cake", -3, 6),
+            Item("Conjured Mana Cake", -3, 3)
         );
 
         val app = GildedRose(items);
