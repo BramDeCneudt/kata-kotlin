@@ -114,15 +114,15 @@ internal class GildedRoseTest {
 
     @Test
     fun Given_AnLegendaryItemWithInvalidQuality_When_UpdateInQualityIsTriggered_Then_QualityShouldBeValidAgain() {
-        val itemName = "Sulfuras, Hand of Ragnaros";
+        val itemName = "Sulfuras, Hand of Ragnaros"
         val items = listOf(Item(itemName, 4, 75))
-        val app = GildedRose(items);
+        val app = GildedRose(items)
 
-        app.updateQuality();
+        app.updateQuality()
 
-        assertEquals(itemName, app.items[0].name);
-        assertEquals(80, app.items[0].quality);
-        assertEquals(4, app.items[0].sellIn);
+        assertEquals(itemName, app.items[0].name)
+        assertEquals(80, app.items[0].quality)
+        assertEquals(4, app.items[0].sellIn)
     }
 
     @Test
@@ -220,45 +220,45 @@ internal class GildedRoseTest {
 
     @Test
     fun Given_ConjuredItemsWithPositiveSellIn_When_UpdateInQualityIsTriggered_Then_QualityShouldDecreaseBy2() {
-        val itemName = "Conjured item";
+        val itemName = "Conjured item"
 
         val items = listOf(Item(itemName, 5, 20))
-        val app = GildedRose(items);
+        val app = GildedRose(items)
 
-        app.updateQuality();
+        app.updateQuality()
 
-        assertEquals(itemName, app.items[0].name);
-        assertEquals(18, app.items[0].quality);
-        assertEquals(4, app.items[0].sellIn);
+        assertEquals(itemName, app.items[0].name)
+        assertEquals(18, app.items[0].quality)
+        assertEquals(4, app.items[0].sellIn)
     }
 
 
     @Test
     fun Given_ConjuredItemsWithSellIn0_When_UpdateInQualityIsTriggered_Then_QualityShouldDecreaseBy4() {
-        val itemName = "Conjured item";
+        val itemName = "Conjured item"
 
         val items = listOf(Item(itemName, 0, 20))
-        val app = GildedRose(items);
+        val app = GildedRose(items)
 
-        app.updateQuality();
+        app.updateQuality()
 
-        assertEquals(itemName, app.items[0].name);
-        assertEquals(16, app.items[0].quality);
-        assertEquals(-1, app.items[0].sellIn);
+        assertEquals(itemName, app.items[0].name)
+        assertEquals(16, app.items[0].quality)
+        assertEquals(-1, app.items[0].sellIn)
     }
 
     @Test
     fun Given_ConjuredItemsWithNegativeSellIn_When_UpdateInQualityIsTriggered_Then_QualityShouldDecreaseBy4() {
-        val itemName = "Conjured item";
+        val itemName = "Conjured item"
 
         val items = listOf(Item(itemName, -5, 20))
-        val app = GildedRose(items);
+        val app = GildedRose(items)
 
-        app.updateQuality();
+        app.updateQuality()
 
-        assertEquals(itemName, app.items[0].name);
-        assertEquals(16, app.items[0].quality);
-        assertEquals(-6, app.items[0].sellIn);
+        assertEquals(itemName, app.items[0].name)
+        assertEquals(16, app.items[0].quality)
+        assertEquals(-6, app.items[0].sellIn)
     }
 
 }

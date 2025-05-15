@@ -1,19 +1,19 @@
-package com.gildedrose.strategy;
+package com.gildedrose.strategy
 
-import com.gildedrose.Item;
+import com.gildedrose.Item
 
 open class DefaultStrategy : Strategy {
 
-    protected val maxQualityStandardItem = 50;
-    protected val minQualityStandardItem = 0;
+    protected val maxQualityStandardItem = 50
+    protected val minQualityStandardItem = 0
 
     override fun updateItem(item : Item) {
         if (item.sellIn > 0) {
-            item.quality -= 1;
+            item.quality -= 1
         } else {
-            item.quality -= 2;
+            item.quality -= 2
         }
-        this.reduceSellInAndCheckMaxAndMinQuality(item);
+        this.reduceSellInAndCheckMaxAndMinQuality(item)
     }
 
     /**
@@ -23,13 +23,13 @@ open class DefaultStrategy : Strategy {
      */
     protected fun reduceSellInAndCheckMaxAndMinQuality(item : Item) {
         if (item.quality > this.maxQualityStandardItem) {
-            item.quality = this.maxQualityStandardItem;
+            item.quality = this.maxQualityStandardItem
         }
 
         if (item.quality < this.minQualityStandardItem) {
-            item.quality = this.minQualityStandardItem;
+            item.quality = this.minQualityStandardItem
         }
 
-        item.sellIn -= 1;
+        item.sellIn -= 1
     }
 }

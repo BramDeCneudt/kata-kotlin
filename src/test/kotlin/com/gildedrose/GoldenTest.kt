@@ -126,7 +126,7 @@ Conjured Mana Cake, -2, 0
 Conjured Mana Cake, -8, 0
 Conjured Mana Cake, -8, 0
 
-""";
+"""
 
     @Test
     fun goldenTest() {
@@ -148,29 +148,29 @@ Conjured Mana Cake, -8, 0
             Item("Conjured Mana Cake", 3, 6),
             Item("Conjured Mana Cake", -3, 6),
             Item("Conjured Mana Cake", -3, 3)
-        );
+        )
 
-        val app = GildedRose(items);
+        val app = GildedRose(items)
 
-        val days = 6;
+        val days = 6
 
-        val stringBuilder = StringBuilder();
+        val stringBuilder = StringBuilder()
 
         stringBuilder.append("\n")
 
         for (i in 1..days) {
-            stringBuilder.append(String.format("-------- day %d --------\n", i));
-            stringBuilder.append("name, sellIn, quality\n");
+            stringBuilder.append(String.format("-------- day %d --------\n", i))
+            stringBuilder.append("name, sellIn, quality\n")
             for (item in items) {
-                stringBuilder.append(item);
-                stringBuilder.append("\n");
+                stringBuilder.append(item)
+                stringBuilder.append("\n")
             }
-            stringBuilder.append("\n");
-            app.updateQuality();
+            stringBuilder.append("\n")
+            app.updateQuality()
         }
-        println(stringBuilder);
+        println(stringBuilder)
 
-        assertEquals(goldenResult, stringBuilder.toString());
+        assertEquals(goldenResult, stringBuilder.toString())
 
     }
 

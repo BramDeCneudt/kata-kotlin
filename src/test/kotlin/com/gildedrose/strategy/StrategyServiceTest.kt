@@ -1,6 +1,6 @@
-package com.gildedrose.strategy;
+package com.gildedrose.strategy
 
-import com.gildedrose.Item;
+import com.gildedrose.Item
 import org.junit.jupiter.params.ParameterizedTest
 import org.junit.jupiter.params.provider.CsvSource
 import kotlin.test.assertEquals
@@ -8,7 +8,7 @@ import kotlin.test.assertEquals
 
 internal class StrategyServiceTest {
 
-    private val strategyService = StrategyService();
+    private val strategyService = StrategyService()
 
     @ParameterizedTest
     @CsvSource(
@@ -22,10 +22,10 @@ internal class StrategyServiceTest {
         itemName: String,
         simpleClassName: String
     ) {
-        val item = Item(itemName, 5, 20);
+        val item = Item(itemName, 5, 20)
 
-        val strategy = strategyService.generateStrategy(item);
+        val strategy = strategyService.generateStrategy(item)
 
-        assertEquals(simpleClassName, strategy::class.java.simpleName);
+        assertEquals(simpleClassName, strategy::class.java.simpleName)
     }
 }

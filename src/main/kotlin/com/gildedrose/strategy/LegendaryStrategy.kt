@@ -1,13 +1,13 @@
-package com.gildedrose.strategy;
+package com.gildedrose.strategy
 
-import com.gildedrose.Item;
+import com.gildedrose.Item
 
 class LegendaryStrategy : Strategy {
 
-    val standardQualityLegendaryItem = 80;
+    val standardQualityLegendaryItem = 80
 
     override fun updateItem(item: Item) {
-        this.possibleFixLegendaryItem(item);
+        this.possibleFixLegendaryItem(item)
         // NOOP
     }
 
@@ -21,8 +21,8 @@ class LegendaryStrategy : Strategy {
     //TODO add warning detection so this is picked up whenever this is logged
     fun possibleFixLegendaryItem(item : Item) {
         if (item.quality != standardQualityLegendaryItem) {
-            System.out.println("WARNING: quality of legendary item has changed while it should not change, fixing it by setting the default quality value: " + item);
-            item.quality = standardQualityLegendaryItem;
+            System.out.println("WARNING: quality of legendary item has changed while it should not change, fixing it by setting the default quality value: " + item)
+            item.quality = standardQualityLegendaryItem
         }
     }
 }
