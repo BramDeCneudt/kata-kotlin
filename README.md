@@ -23,6 +23,11 @@ Is a means to describe (characterize) the actual behavior of an existing piece o
 
 source: [wiki](https://en.wikipedia.org/wiki/Characterization_test)
 
+### TODO items
+There are // TODO items that I would normally discuss with a functional analyst before merging.
+But because of the nature of this exercise I opted to add them as a todo.
+These are improvements on the current code or behavior of the existing code that I found strange.
+
 ### Legendary Item logic
 
 Added a ```possibleFixLegendaryItem``` method to the LegendaryStrategy to have a control method whenever the quality of the legendary changed.
@@ -37,7 +42,7 @@ The git commits are structed with the kata-[ticket number] [title], so you can f
 
 The kanban tickets with blue labels are kata-Typescript only.
 
-You can also see the public repo here: [kata-java](https://github.com/BramDeCneudt/kata-java)
+You can also see the public repo here: [kata-typescript-react](https://github.com/BramDeCneudt/kata-typescript-react)
 
 # Gilded Rose Requirements Specification
 
